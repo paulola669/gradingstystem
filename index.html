@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="body">
+    <div class="a">
+        <p class="z">Get your total result </p>
+        
+            <label class="s" for="">English Language : </label>
+            <input id="t-input" type="number" placeholder="Enter your total score"></input> <br>
+            <label class="s" for="">Mathematics :</label>
+            <input id="p-input" type="number" placeholder="Enter your total score"> <br>
+            <label class="s" for="">Geography :</label>
+            <input id="q-input" type="number" placeholder="Enter your total score"> <br>
+            <label class="s " for="">Physis :</label>
+            <input id="r-input" type="number" placeholder="Enter your total score"><br>
+            <button onclick="myfunction()"  id="o">submit</button> <br>
+            <p id="message"><br></p>  
+    </div>
+    
+</div>
+
+  
+
+    <script>
+        function myfunction(){
+            var a = document.getElementById("t-input").value;
+            var b = document.getElementById("p-input").value;
+            var c = document.getElementById("q-input").value;
+            var d = document.getElementById("r-input").value;
+            // var a = document.getElementById("o").value;
+
+            var f = Number(a) + Number(b) + Number(c) + Number(d)
+            var g = (f/400*100)
+            console.log(f)
+            if (g == 75, g > 75){
+               
+                document.getElementById("message").innerHTML = " WOW Congratulations! you got " + g + "Grade A GOOD LUCK "
+
+            }
+
+            if ( g > 65, g== 65, g<75){
+                
+                document.getElementById("message").innerHTML = " Congratulations! you got " + g + " Grade B GOOD LUCK "
+
+
+            }
+
+            if ( g > 51, g== 51, g<65){
+             
+                document.getElementById("message").innerHTML = "You got " + g + " Grade C you can do bettter "
+
+
+            }
+
+            
+            if ( g == 50){
+               
+                document.getElementById("message").innerHTML = " you got " + g + " Grade C try harder next time  "
+
+
+            }
+
+            
+            if ( g > 49, g == 39, g<49){
+
+                document.getElementById("message").innerHTML = " You got " + g + " Grade E Advice to withdraw "
+
+
+            }
+
+
+
+        } 
+
+
+        function input(){
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            var C = Number(a) + Number(b)
+            document.getElementById("total").innerHTML = C
+        }
+
+    </script>
+</body>
+</html>

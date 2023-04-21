@@ -1,0 +1,80 @@
+
+body{
+    background-color: antiquewhite;
+}
+.a{
+    border: 1px solid black;
+    width: 700px;
+    margin-top: 10px;
+    margin-left: 250px;
+    background-color: aquamarine;
+}
+.z{
+    margin-left: 250px;
+    font-weight: 200;
+    font-size: larger;
+}
+input{
+ margin-top: 50px;
+ padding: 10px;
+
+ border-radius: 5px;
+ justify-content: space-around;
+ /* align-items: center; */
+ width: 200px;
+}
+.s{
+    margin-left: 100px;
+}
+#o{
+    margin-left: 300px;
+    outline: 3px solid orangered;
+    margin-top: 50px;
+    border:2px solid white ;
+    margin-bottom: 100px;
+}
+#p{
+    margin-left: 100px;
+}
+#q{
+    margin-left: 110px;
+    
+}
+#r{
+    margin-left: 140px;
+}
+#t{
+    margin-left: 70px;
+    
+}
+
+:hover#o {
+background-color: green;
+color: white;
+border: 1ps solid white;
+}
+:hover.s{
+    color: rgb(165, 107, 0);
+}
+
+.another{
+    display: flex;
+    border: 1px solid red;
+   
+}
+.pa{
+    display: grid;
+    /* grid-template-row: auto auto auto; */
+    border: 2px solid grey;
+}
+.kai{
+    display: flex;
+    /* grid-template-columns: auto auto auto; */
+}
+#message{
+    margin-left: 100px;
+    font-size: larger;
+    color: green;
+}
+
+
